@@ -1,0 +1,54 @@
+	<!-- Header -->
+	<%- include('../includes/header.ejs') -%>
+      <!-- sidebar-->
+      <%- include('../includes/sidebar.ejs') -%>
+
+      <!-- Main section-->
+      <section>
+         <!-- Page content-->
+         <div class="content-wrapper">
+            <div class="content-heading">
+               Add New Service
+               <small data-localize="dashboard.WELCOME"></small>
+            </div>
+            <!-- START widgets box-->
+            <div class="row">
+               <div class="col-sm-12">
+                  <!-- START panel-->
+                  <div class="panel panel-default">
+                     <div class="panel-heading">Fill out fields</div>
+                     <div class="panel-body">
+                        <form role="form">
+                           <div class="form-group">
+                              <label>Name: </label>
+                              <input type="text" placeholder="Enter name" class="form-control">
+                           </div>
+                           <div class="form-group">
+                              <label >Component Type: </label>
+	                           <div >
+	                              <select name="account" class="form-control m-b">
+	                                 <option>Component 1</option>
+	                                 <option>Component 2</option>
+	                                 <option>Component 3</option>
+	                                 <option>Component 4</option>
+	                              </select>
+	                           </div>
+                           </div>
+                     
+                           <div class="form-group">
+                              <label>Description: </label>
+                              <textarea class="form-control" placeholder="More content"></textarea>
+                           </div>
+                           <button type="submit" class="btn btn-sm btn-primary">ADD</button>
+                        </form>
+                     </div>
+                  </div>
+                  <!-- END panel-->
+               </div>
+            </div>
+            
+         </div>
+      </section>
+      <!-- Page footer-->
+      <%- include('../includes/footer.ejs') -%>
+   
